@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Mi primera videoconsola</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-buttons">
+            <div class="upper-side-left-button"></div>
+            <div class="upper-side-right-button"></div>
+        </div>
+        <div class="bordes">
+            <div class="borde-curvo-izq"></div>
+            <div class="borde-curvo-der"></div>
+        </div>
+        <div class="main-container">
+            <div class="left-main-side">
+                <div class="circulos">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="circulo-botones">
+                    <div class="big-circle left">
+                        <div class="contenedor-boton-left">
+                            <div class="botones-main-left boton-left">
+                                <div class="triangulo left">
+                                    <img src="img/variante-de-contorno-de-triangulo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="botones-main-left boton-right">
+                                <div class="triangulo right">
+                                    <img src="img/variante-de-contorno-de-triangulo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="botones-main-left boton-top">
+                                <div class="triangulo up">
+                                    <img src="img/variante-de-contorno-de-triangulo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="botones-main-left boton-bottom">
+                                <div class="triangulo down">
+                                    <img src="img/variante-de-contorno-de-triangulo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="circulo-parlante"></div>
+            </div>
+            <div class="screen-container">
+                <div class="pantalla" id="mainscreen">
+                    <video width="412" height="220.67" id="videopsp">
+                        <source src="video/psp_intro.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+            <div class="barra-arriba-container">
+                <div class="barra"></div>
+            </div>
+            <div class="right-main-side">
+                <div class="sonylogo">
+                    <img src="img/sony-logo-1-1.png" alt="">
+                </div>
+                <div class="big-circle right">
+                    <div class="contenedor-botones-right">
+                        <div class="botonright up">
+                            <div class="triangulo up">
+                                <img src="img/variante-de-contorno-de-triangulo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="botonright left">
+                            <div class="cuadrado"></div>
+                        </div>
+                        <div class="botonright right">
+                            <div class="circuloright"></div>
+                        </div>
+                        <div class="botonright down">
+                            <span class="x-button">x</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-hole negro"></div>
+            <div class="footer-hole"></div>
+            <div class="circulo-hole"></div>
+            <div class="hoja"></div>
+            <div class="pie-psp">
+                <div class="foot-left">
+                    <div class="play-station-logo">
+                        <img src="img/pngaaa.com-3259955.png" alt="">
+                    </div>
+                    <div class="volumen-contenedor">
+                        <div class="volumen">
+                            <div class="circuloright minus"><span>-</span></div>
+                        </div>
+                        <span class="vol-texto">VOL</span>
+                        <div class="volumen">
+                            <div class="circuloright mas"><span>+</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-central">
+                    <div class="PSP-logo">
+                        <img src="img/psp.png" alt="">
+                    </div>
+                </div>
+                <div class="foot-right">
+                    <div class="select-container">
+                        <span>SELECT</span>
+                    </div>
+                    <div class="start-container">
+                        <button id="btn-start">START</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-hole derecha"></div>
+        </footer>
+    </div>
+    <script src="js/video.js"></script>  
+</body>
+</html>

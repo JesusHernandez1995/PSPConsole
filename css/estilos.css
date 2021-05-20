@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 20px;
+    width: 46.79%;      /* 638.74 px */
+    height: 268.34px;
+    background: #272c30;
+    border-radius: 7% 7% 13% 13%;    /* top-left | top-right | bottom-right | bottom-left */
+}
+
+.side-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .upper-side-left-button,
+.container .upper-side-right-button {
+    background: #05060a;
+    width: 10%;
+    height: 20px;
+    background: rgb(85,88,93);
+    background: linear-gradient(0deg, rgba(85,88,93,1) 0%, rgba(85,88,93,1) 0%, rgba(85,88,93,1) 0%, rgba(0,0,0,1) 0%, rgba(9,9,11,1) 44%, rgba(85,88,93,1) 100%); 
+}
+
+.upper-side-left-button{
+    /* top-left and bottom-right radius | top-right and bottom-left radius*/
+    /* border-radius: 40px 7px;           */
+    border-radius: 50% 0% / 100% 0%;
+}
+
+.upper-side-right-button{
+    /* border-radius: 7px 60px; */
+    border-radius: 0 50% / 0 100%;
+}
+
+.borde-curvo-izq{
+    position: absolute;
+    top: 20px;
+    left: 301px;
+    width: 300px;
+    height: 268px;
+    background: rgb(39,44,48);
+    background: radial-gradient(circle, rgba(39,44,48,1) 7%, rgba(39,44,48,1) 68%, rgba(245,233,238,1) 81%, rgba(39,44,48,1) 82%, rgba(39,44,48,1) 89%); 
+    border-radius: 268px 0 0 268px;
+    z-index: -100;
+}
+
+.borde-curvo-der{
+    position: absolute;
+    top: 20px;
+    left: 765px;
+    width: 300px;
+    height: 268px;
+    background: rgb(39,44,48);
+    background: radial-gradient(circle, rgba(39,44,48,1) 7%, rgba(39,44,48,1) 68%, rgba(245,233,238,1) 81%, rgba(39,44,48,1) 82%, rgba(39,44,48,1) 89%); 
+    border-radius: 0 268px 268px 0;
+    z-index: -100;
+}
+
+.pantalla{
+    width: 412px;
+    height: 207.67px;
+    background: #05060a;
+}
+
+.barra-arriba-container{
+    display: flex;
+    justify-content: center;
+}
+
+.barra{
+    position: absolute;
+    top: 24px;
+    height: 8px;
+    width: 517px;
+    background: #878c8c;
+    border-radius: 124px 124px 10px 10px;
+}
+
+.screen-container{
+    display: flex;
+    justify-content: center;
+}
+
+.circulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dot{
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.dot:nth-child(1){
+    top: 70px;
+    left: 435px;
+}
+
+.dot:nth-child(2){
+    top: 86px;
+    left: 435px;
+}
+
+.dot:nth-child(3){
+    top: 78px;
+    left: 426px;
+}
+
+.dot:nth-child(4){
+    top: 78px;
+    left: 444px;
+}
+
+.big-circle{
+    position: absolute;
+    background: rgb(245,233,238);
+    background: linear-gradient(0deg, rgba(245,233,238,1) 0%, rgba(46,44,46,1) 0%, rgba(36,35,36,1) 63%, rgba(18,18,19,1) 100%);
+    border-radius: 50%;
+}
+
+.big-circle.left{
+    top: 100px;
+    left: 350px;
+    height: 100px;
+    width: 100px;
+}
+
+
+.contenedor-boton-left{
+    /* Aplicamos bordes oscuros con la propiedad de drop-shadow a los botones poligonales */
+    filter: drop-shadow(1px 0px 0px black)
+          drop-shadow(-1px 0px 0px black)
+          drop-shadow(0px 1px 0px black)
+          drop-shadow(0px -1px 0px black)
+          drop-shadow(1px 1px 0px black)
+          drop-shadow(-1px -1px 0px black)
+          drop-shadow(-1px 1px 0px black)
+          drop-shadow(1px -1px 0px black);
+}
+
+.botones-main-left{
+    position: absolute;
+    clip-path: polygon(0 100%, 0 0, 74% 0, 100% 48%, 69% 100%);
+    background: #232429;
+    width: 30px;
+    height: 20px;
+}
+
+.botones-main-left.boton-left{
+    top: 42px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.botones-main-left.boton-right{
+    top: 42px;
+    left: 66px;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+}
+
+.botones-main-left.boton-top{
+    top: 11px;
+    left: 36px;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+}
+
+.botones-main-left.boton-bottom{
+    top: 70px;
+    left: 36px;
+    transform: rotate(270deg);
+    display: flex;
+    align-items: center;
+}
+
+.triangulo{
+    width: 11px;
+}
+
+.triangulo img{
+    width: 100%;
+}
+
+.triangulo.left{
+    transform: rotate(270deg);
+    margin-left: 5px;
+}
+
+.triangulo.right{
+    transform: rotate(270deg);
+    margin-left: 5px;
+}
+
+.triangulo.up{
+    transform: rotate(-90deg);
+    margin-left: 5px;
+}
+
+.triangulo.down{
+    transform: rotate(270deg);
+    margin-left: 5px;
+}
+
+.circulo-parlante{
+    position: absolute;
+    top: 210px;
+    left: 377px;
+    height: 50px;
+    width: 50px;
+    background: rgb(245,233,238);
+    background: linear-gradient(0deg, rgba(245,233,238,1) 0%, rgba(46,44,46,1) 0%, rgba(36,35,36,1) 63%, rgba(18,18,19,1) 100%);
+    border-radius: 50%;
+    border: solid 1px #000;
+}
+
+.big-circle.right{
+    top: 110px;
+    left: 930px;
+    height: 80px;
+    width: 80px;
+}
+
+
+.botonright{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: rgb(36,35,36);
+    background: linear-gradient(0deg, rgba(36,35,36,1) 1%, rgba(18,18,19,1) 33%, rgba(46,44,46,1) 95%, rgba(245,233,238,1) 100%);
+    border-radius: 50%;
+    border: solid 2px #000;
+}
+
+.botonright.up{
+    top: -10px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.botonright.up .triangulo.up{
+    transform: rotate(0deg);
+    margin-left: 7.5px;
+    margin-bottom: 7px;
+}
+
+.botonright.right{
+    top: 28px;
+    left: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonright.left{
+    top: 28px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadrado{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: solid 1px #535454;
+}
+
+.circuloright{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: solid 1px #535454;
+}
+
+.botonright.down{
+    top: 60px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #878988;
+}
+
+.sonylogo{
+    position: absolute;
+    top: 60px;
+    left: 905px;
+    width: 70px;
+}
+
+.sonylogo img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-hole{
+    position: absolute;
+    top: 270px;
+    left: 378px;
+    border-radius: 55px 200px 55px 180px;
+    /* border-radius: 25% 50% / 0 100%; */
+    height: 15px;
+    width: 42px;
+    background: white;
+}
+
+.footer-hole.negro{
+    height: 19px;
+    width: 50px;
+    background: #000;
+    top: 269px;
+    left: 374px;
+}
+
+.footer-hole.derecha{
+    height: 19px;
+    width: 50px;
+    top: 269px;
+    left: 951px;
+    background: white;
+    border-radius: 200px 55px 200px 55px;
+}
+
+.circulo-hole{
+    position: absolute;
+    top: 274px;
+    left: 413px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.hoja{
+    position: absolute;
+    height: 40px;
+    width: 515px;
+    left: 428px;
+    border-radius: 41px 41px 41px 41px;
+    background: rgb(85,88,93);
+    background: linear-gradient(0deg, rgba(85,88,93,1) 0%, rgba(85,88,93,1) 0%, rgba(85,88,93,1) 0%, rgba(0,0,0,1) 0%, rgba(9,9,11,1) 80%, rgba(85,88,93,1) 100%); 
+}
+
+.pie-psp{
+    margin-top: 5px;
+    height: 32px;
+    width: 495px;
+    border-radius: 26px 26px 101px 100px;
+    background: rgb(85,88,93);
+    background: linear-gradient(90deg, rgba(85,88,93,1) 0%, rgba(85,88,93,1) 0%, rgba(85,88,93,1) 0%, rgba(0,0,0,1) 26%, rgba(9,9,11,1) 78%, rgba(85,88,93,1) 100%); 
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    margin-left: 3px;
+}
+
+.foot-left{
+    display: flex;
+    align-items: center;
+}
+
+.play-station-logo{
+    width: 20px;
+    margin-left: 50px;
+}
+
+.play-station-logo img{
+    width: 100%;
+}
+
+.volumen-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.vol-texto{
+    color: #909292;
+    margin: auto 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+}
+
+.volumen .circuloright{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volumen .circuloright span{
+    padding-right: 1px;
+    margin-bottom: 3px;
+    font-size: 17px;
+    color: white;
+}
+
+.foot-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PSP-logo{
+    width: 90px;
+}
+
+.PSP-logo img{
+    width: 100%;
+}
+
+.foot-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot-right > * {
+    margin-right: 14px;
+}
+
+.select-container{
+    border: 1px solid #535454;
+    border-radius: 89px 89px 89px 89px;
+    padding: 0.6px 8px; 
+    display: flex;
+    align-items: center;
+}
+
+.start-container{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.foot-right span,
+.foot-right button{
+    font-size: 10px;
+    color: #909292;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    border: 1px solid #535454;
+    border-radius: 89px 89px 89px 89px;
+    padding: 0.6px 8px; 
+    background: transparent;
+    cursor: pointer;
+}
